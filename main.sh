@@ -32,7 +32,10 @@ do
 #			elif test $Comando = "FILE"; then
 #				<Archivo> <Directorio>
 
-			else
+			elif test $Comando = "Salir"; then
 				Salir=0
+
+			else
+                		$Comando #Como si fuera de la Terminal
 	fi
 done
