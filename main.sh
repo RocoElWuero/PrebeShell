@@ -1,4 +1,6 @@
 #!/bin/bash
+trap "echo ' No puedes interrumpir la ejecución'" INT
+
 Salir=1
 while [ $Salir -ne 0 ]
 #while [ $Comando != "Salir" ]
