@@ -29,7 +29,13 @@ do
 				Multi/juego3.sh
 
 			elif test $Comando = "PrebePlayer"; then
-				Multi/reproductor.sh
+				wich mpg123
+				SET=$?
+				if [ $SET -ne 0 ]; then
+					echo "$c1 No tienes instalado el: mpg123"
+						else
+							Multi/reproductor.sh
+				fi
 
 			elif test $Comando = "Arbol"; then
 				Impre/treecommand.sh
