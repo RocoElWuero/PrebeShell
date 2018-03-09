@@ -1,7 +1,16 @@
 #!/bin/bash
+trap "echo 'No puedes interrumpir la ejecucion \>:v/ prro' " INT
+
+c1="\e[1;31m"
+c2="\e[1;32m"
+c3="\e[1;33m"
+c4="\e[1;34m"
+c5="\e[1;35m"
+c6="\e[1;36m"
+normal="\e[0m"
 
 
-echo "\n //////////////////////////////////////Bienvenido Rey de los Prebecarios/////////////////////////////////////////////"
+echo -n -e "$c1 //////////////////////////////////////Bienvenido Rey de los Prebecarios//////////////////////////////////////////////"
 
 Rey=10
 curso=0
@@ -27,15 +36,15 @@ caso19="calificar el proyecto en la prebepeda"
 
 
 	while [[ $curso -lt 10 ]]; do
-	echo $Rey
 	
 	NUM=$((( RANDOM % 18) + 1))
 
 	case $NUM in
 
 		1) echo $caso1
-
-			echo "1-SI	2-NO"
+		
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -44,14 +53,15 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey+=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 
 
 		2) echo $caso2 
-			
-			echo "1-SI	2-NO"
+		
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -60,12 +70,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey+=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		3) echo $caso3 
 		
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -74,12 +85,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey-=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		4) echo $caso4
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -88,12 +100,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey-=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		5) echo $caso5 
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -102,12 +115,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey+=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		6) echo $caso6 
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -116,12 +130,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey+=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		7) echo $caso7
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -130,12 +145,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey-=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		8) echo $caso8
 			
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -144,12 +160,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey+=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		9) echo $caso9
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -158,12 +175,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey+=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		10) echo $caso10
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -172,12 +190,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey-=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		11) echo $caso11
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -186,12 +205,13 @@ caso19="calificar el proyecto en la prebepeda"
  
 				2) let Rey+=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		12) echo $caso12
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -200,12 +220,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey+=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		13) echo $caso13
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -214,12 +235,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey-=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		14) echo $caso14
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -228,12 +250,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey-=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		15) echo $caso15
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -242,12 +265,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey-=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		16) echo $caso16
 			
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -256,12 +280,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey+=1 ;;
 
-				*) echo "INVALID NUMBER! prro >:v/" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		17) echo $caso17 
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -270,12 +295,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey-=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		18) echo $caso18 
 			
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -284,12 +310,13 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey-=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 		19) echo $caso19
 
-			echo "1-SI	2-NO"
+			echo -n -e "$c2 1-SI	2-NO"
+			echo ""
 			read NUM2
 			clear
 
@@ -298,11 +325,11 @@ caso19="calificar el proyecto en la prebepeda"
 
 				2) let Rey-=1 ;;
 
-				*) echo "INVALID NUMBER prro >:v/!" ;;
+				*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 			esac
 		 ;;
 	
-		*) echo "INVALID NUMBER!" ;;
+		*) echo -n -e "$c3 INVALID NUMBER prro >:v/!" ;;
 	esac	
 
 	let Rey+=$((( RANDOM % 10) + 1))
@@ -312,37 +339,7 @@ caso19="calificar el proyecto en la prebepeda"
 	
 	if [ $Rey -gt 10 ]
 	then
-		echo "Eres Yoda san
-
-		            ____
-                 _.' :  `._
-             .-.'`.  ;   .'`.-.
-    __      / : ___\ ;  /___ ; \      __
-  ,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,
-  :' `.t""--..   @.;_  '  @  ..--""j.' `;
-       `:-.._J '-.-'L__ `-- ' L_...'
-         "-.__ ;  .-"  "-.  : __.-"
-             L ' /.-----.'\' ' J
-              "-.   "--"   .-"
-             __.l"-:_JL_;-";.__
-          .-j/'.    """"  /"" .'\"-.
-        .' "/`. "-.:     .-" .';  `.
-     .-"  / ;  "-. "-..-" .-"  :    "-.
-  .+"-.  : :      "-.__.-"      ;-._   \'
-  "; \  `.                           "+. ;
-  :  ;   ; ;                    : ;  : \:
- : `."-; ;  ;                  :  ;   ,/;
-  ;    -: ;  :                ;  : .-"'  :
-  :\     \  : ;             : \.-"      :
-   ;`.    \  ; :            ;.'_..--  / "
-   :  "-.  "-:  ;          :/."      .'  :
-     \       .-`.\        /t-""  ":-+.   :
-      `.  .-"    `l    __/ /`. :  ; ; \  ;
-        \   .-" .-"-.-"  .' .'j \  /   ;/
-         \ / .-"   /.     .'.' ;_:'    
-          :-""-.`./-.'     /    `.___.'
-                \ `t  ._  /  bug :F_P:
-                  -.t-._:"'
+		echo "Eres Yoda san: Abandonarte la Fuerza no puede. Constante ella es. Si encontrarla no puedes, en tu interior y no fuera deberás mirar"
 
 	
 	else
