@@ -1,14 +1,23 @@
+
 #!/bin/bash
-trap "echo ' No puedes interrumpir la ejecución'" INT
+c1="\e[1;31m"
+c2="\e[1;32m"
+c3="\e[1;33m"
+c4="\e[1;34m"
+c5="\e[1;35m"
+c6="\e[1;36m"
+normal="\e[0m"
+trap "echo -n -e '$c1 No puedes interrumpir la ejecución' " INT
 
 Salir=1
 while [ $Salir -ne 0 ]
 #while [ $Comando != "Salir" ]
 do
         #Código
-	echo "$USER:$PWD"; read Comando
+	echo -n -e "$c6$USER:$PWD> "; read Comando
+	echo -n -e "$normal"
 	if test $Comando = "Menu"; then
-		menu.sh
+		Impre/menu.sh
 
 			elif test $Comando = "Juego1"; then
 				Multi/juego1.sh
@@ -19,25 +28,26 @@ do
 			elif test $Comando = "Juego3"; then
 				Multi/juego3.sh
 
-#			elif test $Comando = "PrebePlayer"; then
-				#Código
+			elif test $Comando = "PrebePlayer"; then
+				Multi/reproductor.sh
 
-#			elif test $Comando = "Arbol"; then
-				#Código
+			elif test $Comando = "Arbol"; then
+				Impre/treecommand.sh
 
-#			elif test $Comando = "Dia"; then
-				#Código
+			elif test $Comando = "Dia"; then
+				Impre/datecommand.sh
 
-#			elif test $Comando = "Hora"; then
-				#Código
+			elif test $Comando = "Hora"; then
+				Impre/hourcommand.sh
 
-#			elif test $Comando = "FILE"; then
-#				<Archivo> <Directorio>
+			elif test $Comando = "FILE"; then
+				Impre/file.sh
 
 			elif test $Comando = "Salir"; then
 				Salir=0
 
 			else
+				echo -n -e "$c1"
                 		$Comando #Como si fuera de la Terminal
 	fi
 done
