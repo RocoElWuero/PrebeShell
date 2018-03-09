@@ -1,5 +1,5 @@
 #!/bin/bash
-trap "echo 'No puedes interrumpir la ejecucion >:v/ prro' " INT
+trap "echo 'No puedes interrumpir la ejecucion \>:v/ prro' " INT
 
 c1="\e[1;31m"
 c2="\e[1;32m"
